@@ -12,6 +12,7 @@ function App() {
     <div>
       <div>
         <input type="text" value = {text} onChange={handleChange} />
+        <button>new Task</button>
       </div>
     </div>
   )
