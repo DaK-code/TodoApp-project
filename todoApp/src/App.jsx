@@ -19,7 +19,12 @@ function App() {
     <div>
       <div>
         <input type="text" value = {text} onChange={handleChange} />
-        <button onClick={()=>handleTasks(text)}>Add New Task</button>
+        {
+        (text)==="" ? <button>Add New Task </button> :
+         <button style={{background : 'blue'}} onClick={()=>handleTasks(text)}>
+          Add New Task
+          </button> }
+        
       </div>
       {tasks.map(task => <p>{task}</p>)}
 
